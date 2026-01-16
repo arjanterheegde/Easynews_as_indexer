@@ -491,7 +491,7 @@ def filter_and_map(
             ext = it.get("ext") or it.get("11")
             size = it.get("size", 0)
             poster = it.get("poster") or it.get("7")
-            posted_raw = it.get("dtime") or it.get("date") or it.get("12")
+            posted_raw = it.get("timestamp") or it.get("ts") or it.get("dtime") or it.get("date") or it.get("12")
             sig = it.get("sig")
             display_fn = it.get("fn") or it.get("filename")
             extension_field = it.get("extension") or it.get("ext")
